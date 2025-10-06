@@ -5,4 +5,6 @@ plugins:
 - jekyll-remote-theme # add this line to the plugins list if you already have one
 show_downloads: true
 github:
-  zip_url: https://github.com/luisrodolfo10/incremental_sfm/tree/main
+  zip_url: https://github.com/luisrodolfo10/incremental_sfm/archive/refs/heads/main.zip
+  tar_url: https://github.com/luisrodolfo10/incremental_sfm/archive/refs/heads/main.tar.gz
+  repository_url: https://github.com/luisrodolfo10/incremental_sfm/tree/main
