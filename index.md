@@ -1,15 +1,3 @@
-Here’s a detailed 
-
-index.md
-
- file that explains your full pipeline, step by step, based on the Structure-from-Motion (SfM) process and the scripts you’ve written. I’ve structured it to include explanations of each module, their roles in the pipeline, and why certain techniques (like geometric verification) are used. I’ve also added placeholders for images where you can manually insert them later.
-
-```markdown
----
-layout: default
-title: Home
----
-
 # Structure-from-Motion (SfM) Pipeline
 
 Welcome to the SfM Pipeline project! This repository demonstrates a 3D reconstruction pipeline using Structure-from-Motion techniques. Below, we describe the entire pipeline, including the key modules and their roles in building a 3D model from images.
