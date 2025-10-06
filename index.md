@@ -14,6 +14,12 @@ title: Home
 
 Welcome to the SfM Pipeline project! This repository demonstrates a 3D reconstruction pipeline using Structure-from-Motion techniques. Below, we describe the entire pipeline, including the key modules and their roles in building a 3D model from images.
 
+![Example reconstruction](assets/sfm.gif)
+
+If you really want to dive into the math of the pipeline that was developed, I reccomend you checking Structure from Motion lecture from Tuebingen University [here](https://uni-tuebingen.de/fakultaeten/mathematisch-naturwissenschaftliche-fakultaet/fachbereiche/informatik/lehrstuehle/autonomous-vision/lectures/computer-vision/)
+
+![Example pipeline](assets/images/pipeline.png)
+
 ---
 
 ## 1. Extracting and Matching Keypoints
