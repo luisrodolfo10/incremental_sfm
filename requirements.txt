@@ -1,0 +1,7 @@
+opencv-python
+numpy
+ExifRead
+open3d==0.19.0
+matplotlib
+scipy
+scikit-learn
