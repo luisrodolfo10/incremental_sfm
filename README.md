@@ -10,4 +10,4 @@ If you really want to dive into the math of the pipeline that was developed, I r
 
 To see more information about the pipeline [here](https://luisrodolfo10.github.io/incremental_sfm/)
 
-The datasets used in this project are from Tohoku University, you can check it out [here] (https://www.aoki.ecei.tohoku.ac.jp/mvs/)
+The datasets used in this project are from Tohoku University, you can check them out [here] (https://www.aoki.ecei.tohoku.ac.jp/mvs/)
