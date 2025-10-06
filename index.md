@@ -21,7 +21,7 @@ The projects use feature detectors like **SIFT** or **ORB** to extract keypoints
 Once the keypoints are extracted, we match them between image pairs using a descriptor matcher (e.g., FLANN or brute-force matcher). This step identifies corresponding points in the images.
 
 ### Why Geometric Verification?
-Keypoint matching often produces outliers due to repetitive patterns or noise. To filter out incorrect matches, we use **geometric verification** with techniques like the **Fundamental Matrix** estimation. This ensures that only matches consistent with the epipolar geometry are retained.
+Keypoint matching often produces outliers due to repetitive patterns or noise. To filter out incorrect matches, we use **geometric verification** with the **Fundamental Matrix** estimation. This ensures that only matches consistent with the epipolar geometry are retained. To get aproppiate intrinsic matrices we get the intrinsic data from metadata of the images using EXIF and also looking up on the internet for the lens width based on the model of the cameras.
 
 **Example Code Snippet**:
 ```python
@@ -79,7 +79,7 @@ The incremental SfM pipeline builds on the two-view reconstruction by adding one
 For each new image, we match its keypoints to the existing 3D points and estimate its pose relative to the current reconstruction.
 
 ### Triangulating New Points
-After adding the new image, we triangulate additional 3D points using matches between the new image and the existing images.
+After adding the new image, we triangulate additional 3D points using matches between the new image and the existing images. In each triangulation process we filter points based on a depth limit and also on cheriality (if the points are in front of the camera). 
 
 ### Local Bundle Adjustment
 To refine the reconstruction, we perform **local bundle adjustment** on the most recently added cameras. This optimizes the camera poses and 3D points to minimize reprojection error.
@@ -106,6 +106,8 @@ Bundle adjustment is a key optimization step in SfM. It refines the entire recon
 Bundle adjustment adjusts the camera parameters (intrinsics and extrinsics) and the 3D point coordinates to achieve the best fit between the observed and projected points.
 
 The project uses a vectorized projection error to optimize the BA process and also with an implementation of a fast jacobian sparsity computation.
+
+After a bundle adjustment cycle, we merge observations and points to have an accurate reconstruction with other images and also do a some filtering as well, including reprojection filtering and outlier filtering
 
 ### Local vs. Global Bundle Adjustment
 - **Local Bundle Adjustment**: Optimizes only the most recently added cameras and points.
