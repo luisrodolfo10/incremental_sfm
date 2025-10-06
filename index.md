@@ -107,7 +107,7 @@ Bundle adjustment adjusts the camera parameters (intrinsics and extrinsics) and 
 
 The project uses a vectorized projection error to optimize the BA process and also with an implementation of a fast jacobian sparsity computation.
 
-After a bundle adjustment cycle, we merge observations and points to have an accurate reconstruction with other images and also do a some filtering as well, including reprojection filtering and outlier filtering
+After a bundle adjustment cycle, we merge observations and points to have an accurate reconstruction with other images and also do some filtering as after merging, including reprojection filtering and outlier filtering.
 
 ### Local vs. Global Bundle Adjustment
 - **Local Bundle Adjustment**: Optimizes only the most recently added cameras and points.
