@@ -4,6 +4,7 @@ description: A project for 3D reconstruction from images.
 plugins:
 - jekyll-remote-theme # add this line to the plugins list if you already have one
 show_downloads: true
+logo: /assets/images/sfm_logo.png
 github:
   zip_url: https://github.com/luisrodolfo10/incremental_sfm/archive/refs/heads/main.zip
   tar_url: https://github.com/luisrodolfo10/incremental_sfm/archive/refs/heads/main.tar.gz
