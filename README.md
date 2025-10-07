@@ -1,6 +1,6 @@
-# Structure-from-Motion (SfM) Pipeline
+# Structure from Motion (SfM) Pipeline
 
-This repository demonstrates a 3D reconstruction pipeline using Structure-from-Motion techniques in Python with opencv library. The implementation uses a coarse to fine approach and also includes a GUI visualizer to see on live the reconstruction.
+This repository demonstrates a 3D reconstruction pipeline using Structure from Motion techniques in Python with opencv library. The implementation uses a coarse to fine approach and also includes a GUI visualizer to see on live the reconstruction.
 
 ![Example reconstruction](sfm.gif)
 
